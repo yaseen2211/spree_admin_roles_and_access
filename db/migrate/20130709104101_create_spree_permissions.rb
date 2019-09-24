@@ -1,4 +1,4 @@
-class CreateSpreePermissions < ActiveRecord::Migration[4.2]
+class CreateSpreePermissions < ActiveRecord::Migration
   def change
     create_table :spree_permissions do |t|
       t.string :title, null: false, unique: true
