@@ -1,4 +1,4 @@
-class RemoveColumnBooleanFromPermissions < ActiveRecord::Migration[4.2]
+class RemoveColumnBooleanFromPermissions < ActiveRecord::Migration
   def change
     remove_column :spree_permissions, :boolean, :boolean, default: true
   end
