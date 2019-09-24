@@ -1,4 +1,4 @@
-class AddAdminBooleanToRoles < ActiveRecord::Migration[4.2]
+class AddAdminBooleanToRoles < ActiveRecord::Migration
   def change
     add_column :spree_roles, :admin_accessible, :boolean, default: false
   end
