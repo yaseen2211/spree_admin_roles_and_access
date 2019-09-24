@@ -1,7 +1,7 @@
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_dev_admin_roles_and_access'
+  s.name        = 'spree_admin_roles_and_access'
   s.version     = '3-0-stable'
   s.summary     = 'Dynamically defines roles and grants it permissions'
   s.required_ruby_version = '>= 2.2.0'
