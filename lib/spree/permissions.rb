@@ -75,6 +75,13 @@ module Spree
       current_ability.can :admin, Spree::Config
     end
 
+    define_method('can-manage-spree/calenders#vendor-vendor_calenders') do |current_ability, user|
+      vendor_ids = user.vendors.pluck(:id)
+      current_ability.can :manage, Spree::Calender do |calender|
+        (calender.vendor_ids & vendor_ids).present?
+      end
+    end
+
     private
       def find_action_and_subject
         lambda do |name,user|
