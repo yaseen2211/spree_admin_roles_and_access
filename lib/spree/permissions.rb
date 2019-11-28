@@ -98,6 +98,7 @@ module Spree
             default: {vendor_id:vendor_ids},
             product: {vendor_id:vendor_ids},
             order: {vendor_id:vendor_ids},
+            auction: {vendor_id:vendor_ids},
             price:   {variant: { vendor_id: vendor_ids }},
             option_type:   {vendor_id:vendor_ids},
             shipment: {order: {vendor_id: vendor_ids}},
